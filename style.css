@@ -571,6 +571,9 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+p {
+  font-family: 'Exo', sans-serif; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -595,3 +598,11 @@ object {
 /* Submit a Quote Page */
 body {
   background: black; }
+
+a {
+  color: #00cc00;
+  font-family: 'Exo', sans-serif; }
+
+p {
+  color: #00cc00;
+  font-family: 'Exo', sans-serif; }
