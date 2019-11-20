@@ -18,7 +18,9 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-	<img class="site-logo" src="<?php echo get_template_directory_uri(); ?>../../project-05/assets/qod-logo.svg" />
+	<div class="logo">
+        <img class="logo-qod" src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg' ?>"/>
+       </div>
 
 
 		<div id="page" class="hfeed site">
