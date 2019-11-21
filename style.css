@@ -230,19 +230,29 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 1rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -253,23 +263,28 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: .9375rem;
+  font-family: "Exo", sans-serif;
+  font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 1.6rem;
   max-width: 100%;
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: .9375rem; }
+code,
+kbd,
+tt,
+var {
+  font-family: "Exo", sans-serif;
+  font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -333,12 +348,36 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
+  max-width: 300px;
+  padding-left: 15px;
+  /* Adhere to container width. */
+  padding-top: 40px; }
 
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+article p {
+  color: white;
+  margin: 20px;
+  margin-left: 5px;
+  font: 1.5rem;
+  font-weight: 400; }
+
+h2 {
+  color: white;
+  font-weight: 400;
+  padding: 15px; }
+
+.container {
+  margin: 0 auto;
+  padding: 15px; }
+
+.source {
+  color: transparent; }
+
+.button {
+  font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -576,11 +615,18 @@ p {
 
 #new-quote-button {
   background: #222222;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #00cc00;
   color: #00cc00;
   padding: 10px;
   font-family: 'Exo', sans-serif;
   border-radius: 3px;
-  font-size: 1.5rem;
-  margin-left: 20px; }
+  font-size: 1rem;
+  width: 220px;
+  margin-left: 1.5rem; }
+
+header {
+  position: relative; }
+
+.logo {
+  width: 750px; }

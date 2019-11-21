@@ -64,10 +64,42 @@ dd {
 
 img {
   height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
+  max-width: 300px;
+  padding-left: 15px; /* Adhere to container width. */
+  padding-top: 40px;
 }
 
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+
+article p {
+  color: white;
+  margin: 20px;
+  margin-left: 5px;
+  font: 1.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  color: white;
+  font-weight: 400;
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.source {
+  color: transparent;
+}
+
+.button {
+  font-size: 1rem;
+}
+
+.menu-toggle {
 }

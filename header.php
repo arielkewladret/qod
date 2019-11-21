@@ -19,7 +19,7 @@
 
 	<body <?php body_class(); ?>>
 	<div class="logo">
-        <img class="logo-qod" src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg' ?>"/>
+        <img class="logo-qod" src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg'; ?>"/>
        </div>
 
 
