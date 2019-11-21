@@ -14,8 +14,8 @@
 					
 				</div><!-- .site-info -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?> <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Brought to you by' ), 'Red Academy' ); ?></a>
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button> -->
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?> <a href="<?php echo esc_url( '' ); ?>"><?php printf( esc_html( 'Brought to you by' ), 'Red Academy' ); ?></a>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

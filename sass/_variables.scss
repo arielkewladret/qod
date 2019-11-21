@@ -1,12 +1,16 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$max__width: 300px;
+$min__width: 900px;
+$max__width-desktop: 1400px;
+$max__width-tablet: 600px;
 
 //
 
 $base__font-green: #00cc00;
 
-$color__background-body: #fff;
+$color__background-body: #222222;
 $color__text-main: #404040;
 
 $color__background-screen: #f1f1f1;
@@ -32,3 +36,4 @@ $font__pre: 'Exo', sans-serif;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 // $margin_outer_size: 3em;
+$font__size-base: 16px;
