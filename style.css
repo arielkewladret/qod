@@ -379,6 +379,9 @@ h2 {
 .button {
   font-size: 1rem; }
 
+.underline {
+  border-bottom: 1px dotted #00cc00; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -471,7 +474,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
+    display: block; }
   .main-navigation ul {
     display: block; } }
 
@@ -480,19 +483,6 @@ a {
 .post-navigation {
   margin: 0 0 1.5rem;
   overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -623,6 +613,35 @@ a {
 p {
   color: #00cc00;
   font-family: 'Exo', sans-serif; }
+
+.site-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #00cc00;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .site-info ul li {
+    border-right: 1px solid #fff;
+    padding: 0;
+    padding-right: 1rem;
+    margin-right: 1rem; }
+    .site-info ul li:last-of-type {
+      border: none; }
+
+@media (min-width: 600px) {
+  .site-info .menu,
+  .site-info p {
+    display: inline-block; }
+  .site-info ul li:last-of-type {
+    border-right: 1px solid #fff; } }
 
 #new-quote-button {
   background: #222222;

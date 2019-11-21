@@ -1,11 +1,11 @@
 @mixin tablet {
-  @media (min-width: ) {
+  @media (min-width: $max__width-tablet) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: ) {
+  @media (min-width: $max__width-desktop) {
     @content;
   }
 }

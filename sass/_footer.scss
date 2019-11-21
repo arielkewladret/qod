@@ -4,6 +4,48 @@ a {
 }
 
 p {
-  color: #00cc00;
+  color: $base__font-green;
   font-family: 'Exo', sans-serif;
 }
+
+.site-info {
+  ul {
+    display: flex;
+    flex-direction: row;
+    //   justify-content: space-between;
+    color: $base__font-green;
+    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      border-right: 1px solid #fff;
+      padding: 0;
+      padding-right: 1rem;
+      margin-right: 1rem;
+      &:last-of-type {
+        border: none;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .site-info {
+    .menu,
+    p {
+      display: inline-block;
+    }
+    ul li:last-of-type {
+      border-right: 1px solid #fff;
+    }
+  }
+}
+
+// .site-content {
+//     &:before{
+//         font-family: "FontAwesome";
+//         content: "\f10d";
+//     }
+
+// }
