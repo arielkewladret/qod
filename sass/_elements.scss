@@ -65,6 +65,7 @@ dd {
 img {
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 300px;
+  width: 100%;
   padding-left: 15px; /* Adhere to container width. */
   padding-top: 40px;
 }
@@ -78,7 +79,7 @@ article p {
   color: white;
   margin: 20px;
   margin-left: 5px;
-  font: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -102,8 +103,4 @@ h2 {
 }
 
 .menu-toggle {
-}
-
-.underline {
-  border-bottom: 1px dotted $base__font-green;
 }

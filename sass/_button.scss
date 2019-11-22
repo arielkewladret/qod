@@ -8,15 +8,15 @@
 #new-quote-button {
   background: #222222;
   border: 2px solid;
-  border-color: #00cc00;
+  border-color: $base__font-green;
   color: $base__font-green;
   padding: 10px;
   font-family: 'Exo', sans-serif;
   border-radius: 3px;
   font-size: 1rem;
-  // padding-right: 10px;
   width: 220px;
   margin-left: $base__space-unit;
+  margin: 20px;
 }
 
 //     .button-icon {

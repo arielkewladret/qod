@@ -1,11 +1,54 @@
 @mixin tablet {
   @media (min-width: $max__width-tablet) {
     @content;
+    article p {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (min-width: $sm__laptop) {
+    @content;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+    article p {
+      font-size: 2.5rem;
+    }
+    .logo-qod {
+      display: block;
+      max-width: 750px;
+      width: 750px;
+    }
   }
 }
 
 @mixin desktop {
-  @media (min-width: $max__width-desktop) {
+  @media (min-width: $sm__laptop) {
     @content;
+    article p {
+      font-size: 2.5rem;
+      place-content: center;
+    }
+    .logo-qod {
+      display: block;
+      max-width: 750px;
+      width: 750px;
+      // text-align: center;
+      // align-items: center;
+    }
+
+    // #new-quote-button {
+    //   float: right;
+    // }
+
+    .site-main {
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+
+      // align-items: flex-end;
+    }
   }
 }

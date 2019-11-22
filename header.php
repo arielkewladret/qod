@@ -13,6 +13,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet"> 
+		<!-- <script src="https://kit.fontawesome.com/7a3af2c674.js" crossorigin="anonymous"></script> -->
+
 
 	<?php wp_head(); ?>
 	</head>
@@ -34,7 +36,6 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
-			
 
 			
 				</nav><!-- #site-navigation -->

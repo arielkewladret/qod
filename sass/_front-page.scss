@@ -1,1 +1,9 @@
+article p {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
 
+.source a {
+  color: transparent;
+}

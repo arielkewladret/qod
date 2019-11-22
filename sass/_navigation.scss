@@ -8,12 +8,12 @@ a {
   color: $color__link;
 
   &:visited {
-    color: $color__link-visited;
+    color: #090;
   }
   &:hover,
   &:focus,
   &:active {
-    color: $color__link-hover;
+    color: #090;
   }
   &:focus {
     outline: thin dotted;
@@ -87,6 +87,7 @@ a {
   a {
     display: block;
     text-decoration: none;
+    color: $base__font-green;
   }
 
   .current_page_item > a,
@@ -110,6 +111,11 @@ a {
   }
 }
 
+@include desktop {
+  position: relative;
+  justify-content: flex-end;
+}
+
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -118,14 +124,12 @@ a {
     overflow: hidden;
   }
 
-  //   .nav-previous {
-  //     float: left;
-  //     width: 50%;
-  //   }
+  a {
+    color: #090;
+    text-decoration: none;
 
-  //   .nav-next {
-  //     float: right;
-  //     text-align: right;
-  //     width: 50%;
-  //   }
+    &:visited {
+      color: #090;
+    }
+  }
 }
