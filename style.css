@@ -493,11 +493,15 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    place-content: center; } }
+    place-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  #new-quote-button p {
+    font-weight: 700;
+    font-size: 2.5rem; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -646,6 +650,12 @@ article p {
 .source a {
   color: transparent; }
 
+.hentry {
+  padding: 0px; }
+
+.container {
+  padding: 0px; }
+
 a {
   color: #00cc00;
   font-family: 'Exo', sans-serif; }
@@ -663,8 +673,6 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   color: #00cc00;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   padding: 0;
   margin: 0;
   list-style: none; }
@@ -705,6 +713,33 @@ p {
     max-width: 750px;
     width: 750px; } }
 
+@media (min-width: 1080px) {
+  .site-info p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+  article p {
+    font-size: 2.5rem;
+    place-content: center; }
+  .logo-qod {
+    display: block;
+    max-width: 750px;
+    width: 750px; }
+  .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  #new-quote-button p {
+    font-weight: 700;
+    font-size: 2.5rem; } }
+
 #new-quote-button {
   background: #222222;
   border: 2px solid;
@@ -714,9 +749,7 @@ p {
   font-family: 'Exo', sans-serif;
   border-radius: 3px;
   font-size: 1rem;
-  width: 220px;
-  margin-left: 1.5rem;
-  margin: 20px; }
+  width: 230px; }
 
 header {
   position: relative; }

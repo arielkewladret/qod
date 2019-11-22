@@ -45,10 +45,17 @@
 
     .site-main {
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       place-content: center;
-
-      // align-items: flex-end;
+      justify-content: center;
+      flex-wrap: wrap;
     }
+
+    #new-quote-button p {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    // align-items: flex-end;
   }
 }

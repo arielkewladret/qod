@@ -9,7 +9,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="main" class="site-main" role="main">
 
-		<!-- <i class="fas fa-quote-left"></i> -->
+		<i class="fas fa-quote-left"></i>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -26,7 +26,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<!-- <i class="fas fa-quote-right"></i> -->
+		<i class="fas fa-quote-right"></i>
 
 		</div><!-- #main -->
 	</div><!-- #primary -->
