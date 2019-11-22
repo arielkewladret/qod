@@ -1,0 +1,22 @@
+.browse-archives {
+  ul {
+    display: flex;
+    line-height: 2em;
+    list-style: none;
+    margin-left: 0;
+    flex-wrap: wrap;
+    padding-left: 0;
+    -ms-flex-wrap: wrap;
+
+    // justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: #0c0;
+      font-size: 1rem;
+      @include tablet {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

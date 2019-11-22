@@ -5,16 +5,26 @@ p {
 
 //@ 1080px make these badboys appear
 
-// .content-area {
+// i {
 //   &:before {
+//    font-family: 'FontAwesome';
+//   content: '\f10d';
+//   color: $base__font-green;
+//   font-weight: 900;
+//   position: relative;
+//   font-size: 100%;
+// }
 
-//   }
+// .site-content::before {
+//   content: '\f10d';
+//   left: -175px;
+// }
+.front-page-area {
+  display: flex;
+  flex-direction: row;
+}
 
-.fas .fa-quote-right {
-  font-family: 'FontAwesome';
-  content: '\f10d';
+.fas {
+  font-size: 100px;
   color: $base__font-green;
-  font-weight: 900;
-  position: relative;
-  font-size: 100%;
 }

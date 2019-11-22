@@ -60,7 +60,9 @@ function qod_scripts() {
 
 	wp_enqueue_style( 'qod-fonts', 'https://fonts.googleapis.com/css?family=Exo:300,300i,500,500i&display=swap' ); 
 
-	wp_enqueue_style('font-awesome', 'https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css'); 
+	// wp_enqueue_style('font-awesome', 'https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css'); 
+
+	wp_enqueue_style('font-awesome', "https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 	add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 

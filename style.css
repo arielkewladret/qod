@@ -350,7 +350,7 @@ img {
   /* Make sure images are scaled correctly. */
   max-width: 300px;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 1px;
   /* Adhere to container width. */
   padding-top: 40px; }
 
@@ -378,6 +378,9 @@ h2 {
   color: transparent; }
 
 .button {
+  font-size: 1rem; }
+
+p {
   font-size: 1rem; }
 
 /*--------------------------------------------------------------
@@ -501,7 +504,11 @@ a {
         flex-wrap: wrap; }
   #new-quote-button p {
     font-weight: 700;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  h1 {
+    text-align: center; }
+  p {
+    font-size: 1em; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -738,7 +745,11 @@ p {
         flex-wrap: wrap; }
   #new-quote-button p {
     font-weight: 700;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  h1 {
+    text-align: center; }
+  p {
+    font-size: 1em; } }
 
 #new-quote-button {
   background: #222222;
@@ -753,3 +764,88 @@ p {
 
 header {
   position: relative; }
+
+h1 {
+  color: white;
+  text-align: left;
+  padding-left: 6px; }
+
+@media (min-width: 1080px) {
+  .page-id-210 p {
+    font-size: 1em; }
+  .page-id-210 article p {
+    font-size: 2.5rem;
+    place-content: center; }
+  .page-id-210 .logo-qod {
+    display: block;
+    max-width: 750px;
+    width: 750px; }
+  .page-id-210 .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-id-210 #new-quote-button p {
+    font-weight: 700;
+    font-size: 2.5rem; }
+  .page-id-210 h1 {
+    text-align: center; }
+  .page-id-210 p {
+    font-size: 1em; } }
+
+.browse-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 2em;
+  list-style: none;
+  margin-left: 0;
+  flex-wrap: wrap;
+  padding-left: 0;
+  -ms-flex-wrap: wrap; }
+  .browse-archives ul a {
+    text-decoration: none;
+    color: #0c0;
+    font-size: 1rem; }
+    @media (min-width: 600px) {
+      .browse-archives ul a {
+        font-size: 1.25rem; }
+        .browse-archives ul a article p {
+          font-size: 1.75rem; } }
+    @media (min-width: 1080px) {
+      .browse-archives ul a {
+        font-size: 1.25rem; }
+        .browse-archives ul a .logo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        .browse-archives ul a article p {
+          font-size: 2.5rem; }
+        .browse-archives ul a .logo-qod {
+          display: block;
+          max-width: 750px;
+          width: 750px; } }
+
+p {
+  color: white; }
+
+.front-page-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.fas {
+  font-size: 100px;
+  color: #00cc00; }

@@ -36,12 +36,27 @@ get_header(); ?>
 
             <div class="tag-archives clearfix">
                <h2>Tags</h2>
-               <?php wp_tag_cloud( array(
+               <?php $tags = get_terms( array(
+                  'taxonomy' => 'post_tag',
+                  'hide_empty' => false,
+               )); ?>
+               <ul>
+               <?php foreach( $tags as $tag ): ?>
+                  <li><a href="<?php  echo get_term_link( $tag ); ?>"><?php echo $tag->name; ?></a></li>
+               <?php endforeach; ?>
+               </ul>
+
+
+
+
+
+          
+               <?php /*wp_tag_cloud( array(
                   'smallest' => 1,
                   'largest' => 1,
                   'unit' => 'rem',
                   'format' => 'list'
-               ) ); ?>
+               ) );*/ ?>
             </div>
          </section>
 
