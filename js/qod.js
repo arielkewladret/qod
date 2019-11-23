@@ -21,6 +21,25 @@
           const post = data[0];
           console.log(post);
 
+          console.log(post.excerpt.rendered);
+
+          const quotesContainer = $('#quote');
+
+          quotesContainer.empty();
+          quotesContainer.append(
+            `<article>
+                ${post.excerpt.rendered}
+
+                <div class="entry-meta">
+                  <p>${post._qod_quote_source}</p>
+
+                  <p class="entry-title">${post.title.rendered}</p>
+                </div>
+              </article>`
+          );
+
+          // replace existing quote w new one
+
           history.pushState(null, null, qod_vars.home_url + '/' + post.slug);
           // 1st value is an object which manages state
           // 2nd value is the url title browser tab

@@ -27,43 +27,48 @@
 @mixin desktop {
   @media (min-width: $sm__laptop) {
     @content;
-    article p {
-      font-size: 2.5rem;
-      place-content: center;
-    }
-    .logo-qod {
-      display: block;
-      max-width: 750px;
-      width: 750px;
-      // text-align: center;
-      // align-items: center;
-    }
+  }
+}
 
-    // #new-quote-button {
-    //   float: right;
-    // }
+@include desktop {
+  article p {
+    font-size: 2.5rem;
+    place-content: center;
+  }
+  .logo-qod {
+    display: block;
+    max-width: 750px;
+    width: 750px;
+  }
 
-    .site-main {
-      display: flex;
-      // flex-direction: column;
-      place-content: center;
-      justify-content: center;
-      flex-wrap: wrap;
+  .site-main {
+    text-align: center;
+
+    article {
+      text-align: left;
     }
+  }
 
-    #new-quote-button p {
-      font-weight: 700;
-      font-size: 2.5rem;
-    }
+  #new-quote-button p {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
 
-    h1 {
-      text-align: center;
-    }
+  h1 {
+    text-align: center;
+  }
 
-    p {
-      font-size: 1em;
-    }
+  p {
+    font-size: 1em;
+  }
 
-    // align-items: flex-end;
+  .front-page-area {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fas {
+    font-size: 100px;
+    color: $base__font-green;
   }
 }
