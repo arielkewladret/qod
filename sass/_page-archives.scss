@@ -1,12 +1,15 @@
+//archives page
+
 .browse-archives {
   ul {
     display: flex;
     line-height: 2em;
-    list-style: none;
     margin-left: 0;
     flex-wrap: wrap;
     padding-left: 0;
     -ms-flex-wrap: wrap;
+    list-style: none;
+    font-size: 1rem;
 
     a {
       text-decoration: none;
@@ -18,3 +21,18 @@
     }
   }
 }
+
+.content-area {
+}
+
+// body,
+// button,
+// input,
+// select,
+// textarea {
+//   color: white;
+//   font-family: $font__main;
+//   font-size: 1rem;
+//   line-height: $font__line-height-body;
+//   background: $color__background-body;
+// }

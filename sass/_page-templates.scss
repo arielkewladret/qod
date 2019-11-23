@@ -14,13 +14,6 @@ body {
   padding-right: 1.5rem;
 }
 
-// main {
-//   @include desktop {
-//     padding-right: 1.5rem;
-//     padding-left: 1.5rem;
-//   }
-// }
-
 a {
   font-weight: lighter;
 }
@@ -28,4 +21,5 @@ a {
 .site-footer {
   font-size: 1em;
   font-weight: lighter;
+  // padding: 40px;
 }

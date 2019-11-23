@@ -8,6 +8,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+   <i class="fas fa-quote-left"></i>		
+
 		<main id="main" class="site-main" role="main">
 
          <section class="browse-archives">
@@ -59,6 +61,9 @@ get_header(); ?>
                ) );*/ ?>
             </div>
          </section>
+
+         <i class="fas fa-quote-right"></i>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

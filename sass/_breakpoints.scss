@@ -21,54 +21,52 @@
       max-width: 750px;
       width: 750px;
     }
-  }
-}
 
-@mixin desktop {
-  @media (min-width: $sm__laptop) {
-    @content;
-  }
-}
+    article p {
+      font-size: 2.5rem;
+      place-content: center;
+    }
+    .logo-qod {
+      display: block;
+      max-width: 750px;
+      width: 750px;
+    }
 
-@include desktop {
-  article p {
-    font-size: 2.5rem;
-    place-content: center;
-  }
-  .logo-qod {
-    display: block;
-    max-width: 750px;
-    width: 750px;
-  }
+    .site-main {
+      text-align: center;
 
-  .site-main {
-    text-align: center;
+      article {
+        text-align: left;
+      }
+    }
 
-    article {
-      text-align: left;
+    #new-quote-button p {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    .front-page-area {
+      display: flex;
+      flex-direction: row;
     }
   }
 
-  #new-quote-button p {
-    font-weight: 700;
-    font-size: 2.5rem;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  .front-page-area {
-    display: flex;
-    flex-direction: row;
-  }
-
   .fas {
-    font-size: 100px;
-    color: $base__font-green;
+    display: none;
+
+    @include desktop {
+      font-size: 100px;
+      color: $base__font-green;
+    }
   }
 }
+
+///to do: quotes transparent, ul padding or some more space

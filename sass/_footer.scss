@@ -1,5 +1,5 @@
 a {
-  color: #00cc00;
+  color: $base__font-green;
   font-family: 'Exo', sans-serif;
 }
 
@@ -12,9 +12,7 @@ p {
   ul {
     display: flex;
     flex-direction: row;
-    //   justify-content: space-between;
     color: $base__font-green;
-    // align-self: flex-end;
     padding: 0;
     margin: 0;
     list-style: none;

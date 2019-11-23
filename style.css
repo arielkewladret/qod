@@ -322,6 +322,63 @@ ins {
 big {
   font-size: 125%; }
 
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both; }
+
+/* Copy */
+p {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 1rem; }
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5rem; }
+
+address {
+  margin: 0 0 1.5rem; }
+
+pre {
+  background: #eee;
+  font-family: "Exo", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6rem; }
+
+code,
+kbd,
+tt,
+var {
+  font-family: "Exo", sans-serif;
+  font-size: 0.9375rem; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -425,8 +482,8 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: #222222;
+  border: 1px solid #00cc00;
   border-radius: 3px; }
   input[type='text']:focus,
   input[type='email']:focus,
@@ -446,6 +503,12 @@ input[type='search'] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.label {
+  color: white; }
+
+input {
+  color: #222222; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -701,7 +764,7 @@ p {
 .site-info p {
   margin: 0; }
 
-@media (min-width: 600px) {
+@media (min-width: 620px) {
   .site-info .menu,
   .site-info p {
     display: inline-block; }
@@ -767,16 +830,17 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   line-height: 2em;
-  list-style: none;
   margin-left: 0;
   flex-wrap: wrap;
   padding-left: 0;
-  -ms-flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+  list-style: none;
+  font-size: 1rem; }
   .browse-archives ul a {
     text-decoration: none;
     color: #0c0;
     font-size: 1rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .browse-archives ul a {
         font-size: 1.25rem; }
         .browse-archives ul a article p {
@@ -797,3 +861,9 @@ h1 {
           display: block;
           max-width: 750px;
           width: 750px; } }
+
+/* Quote Page */
+.entry-title {
+  color: white;
+  text-align: left;
+  padding-left: 6px; }
