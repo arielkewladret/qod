@@ -4,7 +4,6 @@
  *
  * @package QOD_Starter_Theme
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -13,7 +12,6 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet"> 
-		<!-- <script src="https://kit.fontawesome.com/7a3af2c674.js" crossorigin="anonymous"></script> -->
 
 
 	<?php wp_head(); ?>
@@ -21,18 +19,21 @@
 
 	<body <?php body_class(); ?>>
 	<div class="logo">
-        <img class="logo-qod" src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg'; ?>"/>
        </div>
-
-
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
+
+			<div class="logo">
+			<a href="<?php echo home_url(); ?>">
+			<img class="logo-qod" src="<?php echo get_template_directory_uri(); ?>/images/qod-logo.svg"/>
+			</a>
+        </div>
 
 
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title screen-reader-text"><a href="<?php echo home_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 

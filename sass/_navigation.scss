@@ -5,15 +5,15 @@
 /* Links */
 
 a {
-  color: $color__link;
+  color: $base__font-green;
 
   &:visited {
-    color: #090;
+    color: $base__font-hover;
   }
   &:hover,
   &:focus,
   &:active {
-    color: #090;
+    color: darken($base__font-green, 25%);
   }
   &:focus {
     outline: thin dotted;
@@ -102,7 +102,7 @@ a {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .menu-toggle {
     display: block;
   }
@@ -111,10 +111,14 @@ a {
   }
 }
 
-@include desktop {
-  position: relative;
-  justify-content: flex-end;
+footer p {
+  color: white;
 }
+
+// @include desktop {
+//   position: relative;
+//   justify-content: flex-end;
+// }
 
 .comment-navigation,
 .posts-navigation,

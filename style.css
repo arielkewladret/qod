@@ -39,37 +39,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
-@media (min-width: 1000px) {
-  article p {
-    font-size: 2.5rem;
-    place-content: center; }
-  .logo-qod {
-    display: block;
-    max-width: 750px;
-    width: 750px; }
-  .site-main {
-    text-align: center; }
-    .site-main article {
-      text-align: left; }
-  #new-quote-button p {
-    font-weight: 700;
-    font-size: 2.5rem; }
-  h1 {
-    text-align: center; }
-  p {
-    font-size: 1em; }
-  .front-page-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .fas {
-    font-size: 100px;
-    color: #00cc00; } }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -482,8 +451,10 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  color: #222222;
-  border: 1px solid #00cc00;
+  color: white;
+  background-color: #222222;
+  padding: 0.75rem 2.25rem;
+  border: 2px solid #00cc00;
   border-radius: 3px; }
   input[type='text']:focus,
   input[type='email']:focus,
@@ -491,35 +462,37 @@ textarea {
   input[type='password']:focus,
   input[type='search']:focus,
   textarea:focus {
-    color: #111; }
+    color: white; }
 
 input[type='text'],
 input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'] {
-  padding: 3px; }
+  padding: 3px;
+  background-color: #222222;
+  font-size: 1rem;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0.6rem 1rem 0.4rem; }
 
 textarea {
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-left: 3px;
   width: 100%; }
-
-.label {
-  color: white; }
-
-input {
-  color: #222222; }
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
     color: #090; }
   a:hover, a:focus, a:active {
-    color: #090; }
+    color: #004d00; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -568,17 +541,14 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .menu-toggle {
     display: block; }
   .main-navigation ul {
     display: block; } }
 
-@media (min-width: 1000px) {
-  position: relative;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+footer p {
+  color: white; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -733,6 +703,9 @@ article p {
 .container {
   padding: 0px; }
 
+.fas {
+  color: #222222; }
+
 a {
   color: #00cc00;
   font-family: 'Exo', sans-serif; }
@@ -750,7 +723,7 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   color: #00cc00;
-  padding: 0;
+  padding: 0px;
   margin: 0;
   list-style: none; }
   .site-info ul li {
@@ -791,16 +764,44 @@ p {
   .logo-qod {
     display: block;
     max-width: 750px;
-    width: 750px; } }
-
-@media (min-width: 1000px) {
-  .site-info {
+    width: 750px; }
+  article p {
+    font-size: 2.5rem;
+    place-content: center; }
+  .logo-qod {
+    display: block;
+    max-width: 750px;
+    width: 750px; }
+  .site-main {
+    text-align: center; }
+    .site-main article {
+      text-align: left; }
+  #new-quote-button p {
+    font-weight: 700;
+    font-size: 2.5rem; }
+  .fas {
+    font-size: 100px;
+    color: #00cc00; }
+  h1 {
+    text-align: center; }
+  p {
+    font-size: 1em; }
+  .entry-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; } }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px; }
+  .front-page-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 #new-quote-button {
   background: #222222;
@@ -821,9 +822,13 @@ h1 {
   text-align: left;
   padding-left: 6px; }
 
-@media (min-width: 1000px) {
-  .page-id-210 p {
-    font-size: 1em; } }
+.content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.post-210 {
+  font-size: 1rem; }
 
 .browse-archives ul {
   display: -webkit-box;
@@ -860,10 +865,60 @@ h1 {
         .browse-archives ul a .logo-qod {
           display: block;
           max-width: 750px;
-          width: 750px; } }
+          width: 750px; }
+        .browse-archives ul a article p {
+          font-size: 2.5rem;
+          place-content: center; }
+        .browse-archives ul a .logo-qod {
+          display: block;
+          max-width: 750px;
+          width: 750px; }
+        .browse-archives ul a .site-main {
+          text-align: center; }
+          .browse-archives ul a .site-main article {
+            text-align: left; }
+        .browse-archives ul a #new-quote-button p {
+          font-weight: 700;
+          font-size: 2.5rem; }
+        .browse-archives ul a .fas {
+          font-size: 100px;
+          color: #00cc00; }
+        .browse-archives ul a h1 {
+          text-align: center; }
+        .browse-archives ul a p {
+          font-size: 1em; }
+        .browse-archives ul a .entry-header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          padding: 20px; }
+        .browse-archives ul a .front-page-area {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
 
 /* Quote Page */
 .entry-title {
   color: white;
   text-align: left;
   padding-left: 6px; }
+
+.browse-archives ul a {
+  display: block;
+  padding: 20px;
+  line-height: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

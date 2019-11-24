@@ -4,10 +4,10 @@ h1 {
   padding-left: 6px;
 }
 
-.page-id-210 {
-  @include desktop {
-    p {
-      font-size: 1em;
-    }
-  }
+.content-area {
+  display: flex;
+}
+
+.post-210 {
+  font-size: 1rem;
 }

@@ -45,6 +45,11 @@
       font-size: 2.5rem;
     }
 
+    .fas {
+      font-size: 100px;
+      color: $base__font-green;
+    }
+
     h1 {
       text-align: center;
     }
@@ -53,20 +58,22 @@
       font-size: 1em;
     }
 
+    .entry-header {
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
     .front-page-area {
       display: flex;
       flex-direction: row;
     }
-  }
 
-  .fas {
-    display: none;
-
-    @include desktop {
-      font-size: 100px;
-      color: $base__font-green;
-    }
+    // @media screen and (min-width: 1080px) {
+    //   .fas {
+    //     display: none;
+    //   }
+    // }
   }
 }
-
 ///to do: quotes transparent, ul padding or some more space

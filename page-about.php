@@ -10,8 +10,7 @@ get_header(); ?>
 	<i class="fas fa-quote-left"></i>		
 	<div id="main" class="site-main" role="main">
 
-		
-		
+	
 	
 
 		<?php if ( have_posts() ) : ?>

@@ -21,22 +21,24 @@
           const post = data[0];
           console.log(post);
 
-          console.log(post.excerpt.rendered);
+          // console.log(post.excerpt.rendered);
 
           const quotesContainer = $('#quote');
 
           quotesContainer.empty();
           quotesContainer.append(
-            `<article>
+            `<article id="quote">
                 ${post.excerpt.rendered}
 
                 <div class="entry-meta">
                   <p>${post._qod_quote_source}</p>
-
-                  <p class="entry-title">${post.title.rendered}</p>
+                  <p class="entry-title">— ${post.title.rendered}</p>
+                
                 </div>
               </article>`
           );
+
+          // console.log(data);
 
           // replace existing quote w new one
 
@@ -59,6 +61,9 @@
         // 2: post a new quote using the post method
         // using a form to submit a quote so a .submit event
       }); //end of popstate
+
+      // .always(function() {
+      //   loader.hide();
     }); // end of btn click
   }); // end of doc ready
 })(jQuery);

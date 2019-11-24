@@ -41,12 +41,14 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  color: $color__background-body;
-  border: 1px solid $base__font-green;
+  color: white;
+  background-color: $color__background-body;
+  padding: 0.75rem 2.25rem;
+  border: 2px solid $base__font-green;
   border-radius: 3px;
 
   &:focus {
-    color: #111;
+    color: white;
   }
 }
 
@@ -56,17 +58,15 @@ input[type='url'],
 input[type='password'],
 input[type='search'] {
   padding: 3px;
+  background-color: $color__background-body;
+  font-size: 1rem;
+  color: white;
+  box-shadow: none;
+  padding: 0.6rem 1rem 0.4rem;
 }
 
 textarea {
+  align-content: center;
   padding-left: 3px;
   width: 100%;
-}
-
-.label {
-  color: white;
-}
-
-input {
-  color: $color__background-body;
 }

@@ -13,7 +13,7 @@ p {
     display: flex;
     flex-direction: row;
     color: $base__font-green;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     list-style: none;
     li {
@@ -36,6 +36,7 @@ p {
     .menu,
     p {
       display: inline-block;
+      // padding: $base__space-unit;
     }
     ul li:last-of-type {
       border-right: 1px solid #fff;
@@ -43,9 +44,9 @@ p {
   }
 }
 
-@include desktop {
-  .site-info {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
+// @include desktop {
+//   .site-info {
+//     display: flex;
+//     justify-content: flex-end;
+//   }
+// }
